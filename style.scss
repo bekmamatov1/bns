@@ -34,8 +34,9 @@
         text-transform: uppercase;
         color: #011F3A;
       }
-      &__icons{
-        padding:0 20px;
+
+      &__icons {
+        padding: 0 20px;
       }
     }
   }
@@ -71,7 +72,7 @@
     &--btn {
       margin: 20px 0;
       @include btn;
-      cursor: wait;
+      cursor: pointer;
     }
 
     &--btn:hover {
@@ -97,3 +98,70 @@
   }
 }
 
+#product {
+  background: #EEEEEE;
+  margin: 100px 0 20px 0;
+
+  .product {
+    &--menu {
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    &--block {
+      padding: 50px;
+      display: flex;
+      @include between;
+
+      &__log {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        color: $colorBlue;
+      }
+
+      &__btn {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        @include btn
+      }
+
+      &__btn:hover {
+        transform: scale(1.2);
+
+      }
+    }
+
+    &--end {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__question {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+        color: #A1A1A1;
+      }
+
+      &__btn {
+        text-transform: uppercase;
+        color: #3D5675;
+        background: #FFFFFF;
+        border-radius: 44px;
+        padding: 8px 15px;
+        border: 1px solid white;
+        cursor: pointer;
+      }
+
+
+    }
+
+  }
+}
