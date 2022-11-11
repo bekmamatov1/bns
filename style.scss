@@ -1,0 +1,99 @@
+@import "reset";
+@import "mixin";
+@import "verables";
+@import "global";
+
+#header {
+  margin: 20px;
+
+  .header {
+    &--block {
+
+      background: white;
+      display: flex;
+
+      &__icon {
+        margin: 4px 10px 0 150px;
+      }
+
+      &__menuss {
+        text-transform: uppercase;
+        color: #011F3A;
+        width: 50%;
+        @include between
+      }
+
+      &__menu {
+        margin: 0 0 0 300px;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.96px;
+        text-transform: uppercase;
+        color: #011F3A;
+      }
+      &__icons{
+        padding:0 20px;
+      }
+    }
+  }
+}
+
+#hero {
+  height: 505px;
+  background: #F2AE4D;
+
+  .hero {
+    @include center;
+
+    &--title {
+
+      width: 50%;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      color: $colorBlue
+
+    }
+
+    &--text {
+      width: 30%;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: $colorBlue;
+      margin: 20px 0;
+
+    }
+
+    &--btn {
+      margin: 20px 0;
+      @include btn;
+      cursor: wait;
+    }
+
+    &--btn:hover {
+      transform: scale(1.2);
+    }
+
+    &--img {
+    }
+    &--svg {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      h1 {
+        width: 5%;
+        font-size: 15px;
+        letter-spacing: 0.6px;
+        color: #A1A1A1;
+        margin: 0 0 0 -180px;
+
+      }
+    }
+  }
+}
+
