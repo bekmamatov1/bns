@@ -22,6 +22,9 @@
         width: 50%;
         @include between
       }
+      &__menuss a:hover{
+        border-bottom: 3px solid #011F3A;
+      }
 
       &__menu {
         margin: 0 0 0 300px;
