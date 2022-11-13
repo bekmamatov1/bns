@@ -38,7 +38,6 @@ a {
   background: white;
   border: 1px solid #3D5675;
   border-radius: 3px;
-  padding: 0 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -63,7 +62,11 @@ a {
 
 .flip-container, .front, .back {
   width: 400px;
-  height: 400px;
+  height: 350px;
+}
+
+.flip-container {
+  margin: 25px 20px;
 }
 
 #header {
@@ -83,6 +86,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#header .header--block__menuss a:hover {
+  border-bottom: 3px solid #011F3A;
 }
 #header .header--block__menu {
   margin: 0 0 0 300px;

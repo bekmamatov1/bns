@@ -33,7 +33,6 @@ a{
   background: white;
   border: 1px solid #3D5675;
   border-radius: 3px;
-  padding: 0 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -54,5 +53,8 @@ transform: rotateY(180deg);
 }
 .flip-container,.front, .back{
   width: 400px;
-  height: 400px;
+  height: 350px;
+}
+.flip-container{
+  margin:25px 20px;
 }
